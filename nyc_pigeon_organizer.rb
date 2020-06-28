@@ -9,7 +9,9 @@ def nyc_pigeon_organizer(data)
         if unique_name.include?(name) == false
           new_hash[name.to_sym] = {}
           unique_name.push(name)
-          
+        end 
+        if new_hash
+        
           new_hash[name.to_sym][first_key] = []
           new_hash[name.to_sym][first_key].push(key.to_s)
         else 
