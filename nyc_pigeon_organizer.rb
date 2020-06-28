@@ -42,5 +42,5 @@ pigeon_data = {
 }
 
 x = nyc_pigeon_organizer(pigeon_data)
-binding.pry
+
 puts x 
