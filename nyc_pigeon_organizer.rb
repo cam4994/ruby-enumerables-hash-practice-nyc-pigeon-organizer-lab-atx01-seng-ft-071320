@@ -10,13 +10,10 @@ def nyc_pigeon_organizer(data)
           new_hash[name.to_sym] = {}
           unique_name.push(name)
         end 
-        if new_hash[name.to_sym][first_key]
-        
+        if new_hash[name.to_sym][first_key] == nil 
           new_hash[name.to_sym][first_key] = []
-          new_hash[name.to_sym][first_key].push(key.to_s)
-        else 
-          new_hash[name.to_sym][first_key] = []
-          new_hash[name.to_sym][first_key].push(key.to_s)
+        end 
+        new_hash[name.to_sym][first_key].push(key.to_s)
         end
       end 
       binding.pry
