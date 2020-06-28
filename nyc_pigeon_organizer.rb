@@ -14,13 +14,13 @@ def nyc_pigeon_organizer(data)
           new_hash[name.to_sym][first_key] = []
         end 
         new_hash[name.to_sym][first_key].push(key.to_s)
-        end
-      end 
-      binding.pry
+      end
     end 
+      binding.pry
   end 
+end 
   new_hash
-end
+
 
 pigeon_data = {
   :color => {
